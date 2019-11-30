@@ -5,8 +5,8 @@ int getSum(int a, int b);
 int main()
 {
 
-    int a = 10;
-    int b = 11;
+    int a = -10;
+    int b = -11;
     int val = getSum(a, b);
     printf("%d", val);
     return val;
@@ -26,6 +26,8 @@ int getSum(int a, int b){
 
         outbit = bit1 ^ bit2 ^ carry;
         printf("n:%d bit1:%d bit2:%d carry:%d outbit:%d\n", n, bit1, bit2, carry, outbit);
+
+        bit1 & bit2
 
         if (((bit1 == 1 && bit2 == 1))
                 || ((carry == 1) && (bit1 == 1 || bit2 == 1)))
